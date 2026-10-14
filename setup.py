@@ -21,6 +21,9 @@ setup(
         'kronicle_sdk'
         # other dependencies
     ],
+    extras_require={
+        'profiling': ['nvtx'],  # NVTX ranges for Nsight Systems, see profiling/run_nsys.sh
+    },
         entry_points={
         'console_scripts': [
             'rims=DynSpecMS.scripts.cli:main',
